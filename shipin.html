@@ -1,0 +1,27 @@
+
+
+    
+
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>视频播放</title> 
+</head>
+<body>
+    <video width="700" height="700  " controls="controls" style="  margin-left: 30%;">
+        <source src="doc\test.mp4" type="video/mp4" />
+        <source src="doc\test.ogg" type="video/ogg" />
+        <source src="doc\test.webm" type="video/webm" />
+        <object data="doc\test.mp4" width="320" height="240">
+          <embed src="doc\test.swf" width="320" height="240" />
+        </object>
+      </video>
+    <!-- 
+      上例中使用了 4 中不同的视频格式。HTML 5 <video> 元素会尝试播放以 mp4、ogg 或 webm 格式中的一种来播放视频。如果均失败，则回退到 <embed> 元素。
+    
+        问题 -->
+
+</body>
+</html>
